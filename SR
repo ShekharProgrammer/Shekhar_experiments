@@ -1,0 +1,35 @@
+import turtle as t
+
+def l_s():
+    t.right(225)
+    for i in range(240):
+        t.forward(1)
+        t.left(1)
+    for i in range(245):
+        t.right(1)
+        t.forward(1)
+        
+def l_t():
+    t.penup()
+    t.forward(87)
+    t.pendown()
+    t.right(180)
+    t.forward(174)
+    t.penup()
+    t.right(180)
+    t.forward(87)
+    t.pendown()
+    t.right(90)
+    t.forward(200)
+    
+t.penup()    
+t.goto(-80,0)
+t.pendown()
+l_s()
+t.setheading(0)
+t.penup()
+t.goto(87,0)
+t.pendown()
+l_t()         
+
+t.done()
